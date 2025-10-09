@@ -1,0 +1,13 @@
+What I Learned
+I learned about the devices and cables on the physical layer. The different categories of on ANSI cables, coaxial cables, fiber optics and twisted pairs and why each are used versus others.
+We learned about attenuation and crosstalk. How one wire sends multiple signals through different frequencies and encoding/decoding.
+At the end, I got a first hand history account of protocols at the datalink layer starting from polling and tokens to token rings and CS MA CD Ethernet.
+
+Challenges Faced
+The sheer amount of information. We studied wire configurations, wire grades, wiring techniques for crosstalk, best uses, and protocols.
+
+How I Solved Them
+I created a mental mind palace with the different wire medium with their own rooms, devices in one room and protocols on the next floor of the OSI model (data link layer)
+
+Next Steps:
+Review notes and continue CompTIA readings, labs, and quizzes. Continue Jason Dion's course.
