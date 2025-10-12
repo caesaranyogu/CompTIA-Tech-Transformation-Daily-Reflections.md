@@ -1,0 +1,68 @@
+🧠 Network+ Study Log — October 11, 2025
+
+What I Learned Today
+
+Understood that Ethernet is both a physical cabling standard and a data link protocol.
+
+Learned that each switch port forms its own collision domain, isolating traffic unless VLANs are set.
+
+Reviewed how half-duplex links (like hubs or legacy NICs) still allow collisions, but only locally.
+
+Broke down MAC address structure (OUI + Device ID), and learned how U/L and I/G bits define global vs local and unicast vs multicast addressing.
+
+Understood locally administered MACs (example: 02:1A:2B:3C:4D:5E) and how to spot broadcast (FF:FF:FF:FF:FF:FF).
+
+Learned about fiber splicing—fusion (~0.3 dB loss) vs mechanical (~1 dB loss)—and how each splice affects signal strength.
+
+Clarified that single-mode fiber uses laser diodes (narrow, long-distance beam) while multimode uses LEDs or VCSELs.
+
+Explored EtherType values, where anything ≥ 0x0600 (1536) means “protocol type,” and anything lower means “payload length.”
+
+
+Challenges Faced
+
+Confusion over whether Ethernet referred to a physical cable or a protocol.
+
+Unclear how MAC addresses relate to binary and hexadecimal notation.
+
+Difficulty distinguishing multicast, broadcast, and universal MAC addresses.
+
+Needed clarity on how half-duplex collisions happen only under specific conditions (hubs or legacy NICs).
+
+Didn’t fully understand splicing in fiber optics or how loss per splice is calculated.
+
+Mixed up EtherType vs frame length interpretation and where the 0x0600 cutoff comes from.
+
+
+How I Solved Them
+
+Used targeted prompts to isolate confusion points.
+
+Asked: “What exactly is Ethernet—is it a cord or a protocol or what?” to clarify its layered nature.
+
+Asked: “How do the 48 bits of a MAC match up to the 12 hexadecimal digits?” to bridge binary–hex understanding.
+
+Asked: “What does group multicast mean compared to universal or OUI?” to grasp address categories.
+
+Asked: “Half-duplex usually occurs if a hub is connected—why is this?” to connect old tech to collision domains.
+
+Asked: “Explain a splice in fiber optics in simple English with analogies.” to visualize physical cable joining.
+
+Asked: “How is the EtherType value used to distinguish between payload type and frame length?” to decode the 0x0600 rule.
+
+Followed up with: “Explain how we got 80 and 1536.” to understand hexadecimal-to-decimal conversion.
+
+
+Next Steps
+
+Continue building and walking through my Mind Palace — the castle with four wings (Blue Keep, Green Hall, Red Tower, Yellow Spire).
+
+Assign each CompTIA Network+ section to its proper “wing” and visualize details, color themes, and symbolic cues.
+
+Review Ethernet frame fields and bit-level MAC structure within the “Infrastructure Hall.”
+
+Add fiber splice types and diagrams to the “Service Tower.”
+
+Revisit EtherType and MAC bit flags for deeper memorization.
+
+Keep refining prompts to uncover subtle relationships between layers and technologies.
