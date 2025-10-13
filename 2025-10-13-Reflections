@@ -1,0 +1,28 @@
+What I Learned:
+
+* Protocol Evolution: Token Bus, CSMA/CD Ethernet, WDM and metaphorical hyperdimensional multiplexing.
+* Hardware & Cabling: NICs hold protocol logic, Ethernet CAT3-CAT8 standards, fiber optics standards, slot vs port concepts, duplex modes.
+* Frames & Traffic: TCP segmentation, jumbo and runt frames.
+* PoE Standards: Alternative A/B, four-pair PoE, compatibility with devices and link speeds.
+* Switch Troubleshooting: Power issues, hardware failures, MAC/CAM table usage, STP/RSTP to prevent loops, broadcast storms.
+* Analogies: Collisions as multiple selves, slot/floor vs port/room, PoE lanes as roads for data and power.
+
+Challenges Faced:
+
+* Understanding the difference between running-config vs startup-config.
+* Visualizing how MAC tables work with flooding and loops.
+* Grasping duplex modes and which PoE pairings work with Gigabit Ethernet.
+* Differentiating slots, ports, and subslots on modular devices.
+
+How I Solved Them:
+
+* Used analogies to relate network concepts to physical and spiritual metaphors.
+* Visualized slot/port relationships as floors and rooms.
+* Consulted MAC table behavior examples to understand frame flooding.
+* Studied PoE pair usage and speeds with simple diagrams in mind.
+
+Next Steps:
+
+* Practice configuring network addressing, including IPs, subnets, and VLANs on switches.
+* Apply troubleshooting workflow to simulated lab environments.
+* Observe MAC table learning and flooding behavior in real devices or simulators.
