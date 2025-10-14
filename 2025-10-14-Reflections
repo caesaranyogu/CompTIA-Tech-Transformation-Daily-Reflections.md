@@ -1,0 +1,72 @@
+What I Learn
+
+SPAN (Switched Port Analyzer) mirrors traffic from one or more switch ports to a destination port for packet analysis.
+
+Promiscuous mode allows a NIC to receive all traffic on a network segment, not just packets addressed to it.
+
+Difference between TAP (Test Access Point) and SPAN: TAP is hardware-based and captures all traffic passively; SPAN is software-based and mirrors traffic from switch ports.
+
+Collision domains vs broadcast domains: collision domains involve too much “talking” (packet collisions) while broadcast domains involve too much “listening” (broadcast traffic).
+
+ARP (Address Resolution Protocol) maps IP addresses to MAC addresses, and ARP spoofing is a man-in-the-middle attack exploiting ARP’s trust model.
+
+PoE (Power over Ethernet) delivers DC power over Ethernet cables to devices; conceptually related to Tesla’s vision of wireless power transmission.
+
+RF energy can be harvested to deliver small amounts of power wirelessly, though efficiency is extremely limited.
+
+
+Challenges Faced
+
+Understanding how to determine which NIC is in use when multiple network adapters exist and some appear disconnected.
+
+Distinguishing crossover vs straight-through Ethernet cables in practical deployment.
+
+Identifying EtherType values for filtering IPv4 vs IPv6 traffic in packet analyzers.
+
+Visualizing traffic capture concepts like SPAN vs promiscuous mode and TAP devices.
+
+Grasping collision domains vs broadcast domains and remembering their practical implications.
+
+Comprehending where ARP gets its IP addresses from and the sequence of IP resolution.
+
+Understanding ARP spoofing risks and mitigation strategies.
+
+Relating historical concepts (Tesla’s wireless power) to modern networking and PoE.
+
+Conceptually understanding RF-based wireless power transfer and its practical limitations.
+
+
+How I Solved Them
+
+NIC identification: Learned to use ipconfig /all (Windows) and status lights/connection checks to determine which NIC is active.
+
+Cable types: Reviewed network cabling concepts; straight-through for switch ↔ NIC, crossover for switch ↔ switch or NIC ↔ NIC without auto-MDIX.
+
+EtherType filtering: Determined correct values — 0x0800 for IPv4 and 0x86DD for IPv6.
+
+SPAN vs TAP vs promiscuous mode: Researched switch features, hardware TAPs, and NIC driver modes; used analogies (“camera feed vs one-way mirror” and “too much talking/listening”) to internalize.
+
+Collision vs broadcast domains: Used simplified analogies (“talking vs listening”) and examined device behavior (switches vs routers) to solidify understanding.
+
+ARP origin of IPs: Studied OSI layers and packet flow: IP comes from the application, routing table, or DHCP; ARP resolves it to MAC.
+
+ARP spoofing mitigation: Explored static ARP tables, Dynamic ARP Inspection, VLAN segmentation, IDS monitoring, and encryption as defense strategies.
+
+PoE & Tesla: Connected historical AC power transmission concepts to PoE; researched wireless PoE analogies and RF-based power delivery.
+
+Wireless RF power limitations: Studied rectennas, power density, distance decay, and regulatory constraints; understood low-power IoT applications.
+
+
+Next Steps
+
+Ethernet switches and network adapters introduce potential issues at the Data Link layer and can reveal subtle cabling problems and interference at the Physical layer. Diagnosing and resolving problems gets more complex as you move up through the network stack. Assimilate your knowledge of cabling types, Ethernet framing, status indicators, and commands for network equipment.
+
+Learning Outcomes / Questions to Answer:
+
+How can you use the physical and logical topology to isolate a problem to a particular area of the network?
+
+What information can you obtain from network device status lights?
+
+Given symptoms of a particular problem, what commands should you use to gather information about an Ethernet switch's configuration?
+
+What are the symptoms and causes of a network loop?
