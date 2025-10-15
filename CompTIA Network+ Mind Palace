@@ -1,0 +1,165 @@
+🟥 Red Tower – The Network Wizards
+
+Color: Red
+Domain: Physical Foundations & Connectivity
+Essence: Builders of flow — those who channel signals through the material world.
+Core Lesson: “Master the wire, and you master the whisper of data.”
+
+Concepts:
+
+OSI Model Layers: Physical, Data Link, Network, Transport, Session, Presentation, Application
+
+Transmission media: Wireless (802.11, cellular, satellite), Wired (fiber, coaxial, DAC)
+
+Transceivers and connectors: SC, LC, ST, MPO, RJ11, RJ45, F-type, BNC
+
+Network topologies: Mesh, hybrid, star/hub and spoke, spine and leaf, point-to-point, three-tier, collapsed core
+
+Networking appliances: Routers, switches, firewalls, IDS/IPS, load balancers, proxies, NAS, SAN, and wireless devices
+
+Physical installations: Installation implications, power considerations, and environmental factors
+
+Cabling and physical interface issues: Cable type mismatches, signal degradation, termination, TX/RX transposed, port status, PoE, transceiver mismatch, signal strength
+
+Ports and protocols (overview connection types): FTP, SFTP, SSH, Telnet, SMTP, DNS, DHCP, HTTP, HTTPS, SNMP, LDAP, RDP, SIP
+
+Traffic types: Unicast, multicast, anycast, broadcast
+
+
+🟦 Blue Keep – The Infrastructure Masters
+
+Color: Blue
+Domain: Core Switching, Routing, and Network Architecture
+Essence: Keepers of order — architects who govern the movement of information between realms.
+Core Lesson: “Control the pathways, and you command the pulse of the network.”
+
+Concepts:
+
+Configuring Interfaces and Switches
+
+Configuring Network Addressing
+
+Configuring Routing and Advanced Switching
+
+IPv4 Addressing: Public vs private, APIPA, RFC1918, loopback, subnetting (VLSM, CIDR), classes A–E
+
+Routing technologies: Static/dynamic routing (BGP, EIGRP, OSPF), route selection, NAT, PAT, FHRP, VIP, subinterfaces
+
+Switching technologies: VLANs, interface configuration, spanning tree, MTU, jumbo frames
+
+Wireless devices (infrastructure configuration): Channels, frequency, SSID, encryption, authentication, guest networks, antennas, access points
+
+Network services: DHCP, SLAAC, DNS, NTP, PTP, NTS
+
+Performance issues: Congestion, latency, packet loss, and wireless interference
+
+Network services issues: Switching issues (STP, VLANs, ACLs), routing issues, address pool exhaustion, incorrect gateways/subnet masks
+
+
+🟩 Green Hall – The Security Sentinels
+
+Color: Green
+Domain: Protection, Policy, and Cyber Defense
+Essence: Guardians of integrity — defenders who maintain balance through vigilance and discipline.
+Core Lesson: “Defense is not reaction — it’s foresight made real.”
+
+Concepts:
+
+Logical security: Encryption (data in transit/rest), PKI, IAM, MFA, SSO, RADIUS, LDAP, SAML, TACACS+, time-based authentication, authorization, least privilege, RBAC, geofencing
+
+Physical security: Cameras, locks, barriers
+
+Security terminology: Risk, vulnerability, exploit, threat, CIA triad
+
+Deception technologies: Honeypot, honeynet
+
+Audits and compliance: Data locality, PCI DSS, GDPR
+
+Network segmentation: IoT, IIoT, SCADA, ICS, OT, guest, BYOD
+
+Types of attacks: DoS/DDoS, VLAN hopping, MAC flooding, ARP/DNS poisoning/spoofing, rogue devices, evil twin, on-path, social engineering (phishing, dumpster diving, shoulder surfing, tailgating)
+
+Security features and defense: Device hardening, NAC, ACLs, key management, URL/content filtering, trusted vs untrusted zones, screened subnet
+
+Applying Network Security Features
+
+Supporting Network Security Design
+
+Explaining Network Security Concepts
+
+
+🟨 Yellow Spire – The Cloud & Remote Scholars
+
+Color: Yellow
+Domain: Virtualization, Cloud, and Remote Access Systems
+Essence: Dreamers and designers — those who dwell between physical and virtual, shaping the unseen.
+Core Lesson: “To master the cloud is to shape possibility itself.”
+
+Concepts:
+
+Cloud concepts: NFV, VPC, network security groups, cloud gateways
+
+Deployment models: Public, private, hybrid
+
+Service models: SaaS, IaaS, PaaS
+
+Comparing remote access methods: VPNs, SSH, GUI, API, and console
+
+Access and management interfaces
+
+Documentation: Physical vs logical diagrams, rack diagrams, cable maps, network diagrams, asset inventory, IPAM, SLA, and wireless surveys
+
+Life-cycle management: EOL, EOS, software management, and decommissioning
+
+Change management: Request tracking and approval process
+
+Configuration management: Production, backup, baseline configurations
+
+Network monitoring: SNMP, flow data, packet capture, baseline metrics, log aggregation, API integration, port mirroring
+
+Disaster recovery: RPO, RTO, MTTR, MTBF, cold/warm/hot sites, active-active/passive, and testing
+
+
+⬛ Black Mystic Tower – The Troubleshooting Enclave
+
+Color: Black
+Domain: Troubleshooting, Analysis, and Optimization
+Essence: Alchemists of insight — those who turn confusion into clarity.
+Core Lesson: “Every failure hides a truth waiting to be unveiled.”
+
+Concepts:
+
+Troubleshooting methodology: Identify, theorize, test, plan, implement, verify, document
+
+Tools and protocols: Protocol analyzers, CLI tools, cable testers, Wi-Fi analyzers
+
+Supporting Network Management
+
+Supporting Cabling and Physical Installations
+
+Explaining Application Services
+
+Explaining Network Topologies
+
+Implementing Network Services
+
+Supporting Network Management
+
+Summarizing Cloud Concepts (review and validation)
+
+Verification and optimization: Traffic analysis, performance baselining, incident documentation
+
+Lessons integration: Mind Palace walkthrough and applied synthesis
+
+✅ Summary of Allocation
+
+Red Tower: 42 concepts
+
+Blue Keep: 45 concepts
+
+Green Hall: 47 concepts
+
+Yellow Spire: 41 concepts
+
+Gold Mystic Tower: 37 concepts
+Total: ≈ 212 concepts
