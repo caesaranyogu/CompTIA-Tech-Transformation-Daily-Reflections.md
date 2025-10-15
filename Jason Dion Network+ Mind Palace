@@ -1,0 +1,250 @@
+Jason Dion Mind Palace Map
+
+
+🟥 Red Tower – The Network Wizards (Physical Foundations & Connectivity)
+
+Essence: Builders of flow — signals, cables, devices, and topologies.
+
+Videos assigned here:
+
+Network Fundamentals
+
+Network Components (OBJ. 1.2)
+
+Network Resources (OBJ. 1.2)
+
+Network Geography (OBJ. 1.6)
+
+Understanding Network Geography (OBJ. 1.6)
+
+Wired Network Topology (OBJ. 1.6)
+
+Wireless Network Topology (OBJ. 2.3)
+
+Datacenter Topology (OBJ. 1.6)
+
+Media and Cabling Distributions (OBJ 1.5 & 5.5)
+
+Copper Media & Connections
+
+Building a Copper Cable
+
+Fiber Media & Connections
+
+Transceivers
+
+Distribution Systems (OBJ. 2.4 & 5.5)
+
+Cable Distribution Systems
+
+Wiring a Network
+
+Testing a Network
+
+Power Distribution Systems
+
+HVAC and Fire Suppression Systems
+
+Wireless Networks (OBJ 1.5 & 2.3)
+
+Wireless Network Types
+
+Wireless Antennas & Understanding Antennas
+
+Wireless Frequencies
+
+802.11 Standards
+
+Wireless Security, When Wireless Security Fails, Captive Portals
+
+
+🟦 Blue Keep – The Infrastructure Masters (Switching, Routing, Core Network Architecture)
+
+Essence: Control the pathways — VLANs, routing, addressing, NAT, and network devices.
+
+Videos assigned here:
+
+OSI Model (OBJ. 1.1)
+
+Layer 1 → Layer 7
+
+Encapsulation and Decapsulation
+
+Understanding the OSI Model
+
+Ethernet Switching (OBJ 1.2, 2.2, & 4.3)
+
+Ethernet Fundamentals
+
+Network Devices & Understanding Network Devices
+
+VLAN, VLAN Configuration, Understanding VLANs
+
+Spanning Tree Protocol (STP)
+
+Network Access Control (NAC)
+
+Maximum Transmission Unit (MTU)
+
+IP Addressing (OBJ 1.5, 1.7, & 1.8)
+
+IPv4 Addressing, Types, Data Flows
+
+Assigning IPv4 Addresses
+
+Computer Mathematics
+
+Subnetting (including practice & by hand)
+
+IPv6 Addressing & Data Flows
+
+IPv4/IPv6 Compatibility
+
+Routing (OBJ 1.4 & 2.1)
+
+Routing Fundamentals, Tables, Protocols, Route Selection
+
+Address Translation (NAT/PAT)
+
+Routing Redundancy Protocols
+
+Configuring Routers
+
+Multicast Routing, GRE
+
+
+🟩 Green Hall – The Security Sentinels (Protection & Cyber Defense)
+
+Essence: Guardians of integrity — encryption, IAM, attacks, and compliance.
+
+Videos assigned here:
+
+Network Security Fundamentals (OBJ. 4.1 & 4.3)
+
+CIA Triad, Threats & Vulnerabilities, Risk Management
+
+Audits & Compliance, Device Hardening, Physical Security
+
+Honeypots & Active Defense
+
+Network Attacks (OBJ. 4.2)
+
+DoS/DDoS, MAC Flooding, ARP Attacks
+
+VLAN Hopping, DNS Attacks, On-path Attack
+
+Rogue Device & Attacks, Social Engineering, Phishing
+
+Malware Attacks & Understanding Malware
+
+Logical Security (OBJ. 1.4, 4.1, & 4.3)
+
+IAM, MFA, Authentication Methods
+
+Security Principles, Encryption, IPSec, PKI
+
+Digital Certificates, Key Management
+
+Network Segmentation (OBJ 1.2, 1.8, 3.5, 4.1, & 4.3)
+
+Firewalls, ACLs, Segmentation Zones, Jumpbox
+
+Content Filtering, IoT, SCADA/ICS, BYOD
+
+Zero-trust Architecture, VPN, Remote Access
+
+
+🟨 Yellow Spire – The Cloud & Remote Scholars (Cloud, Virtualization, Remote Access)
+
+Essence: Dreamers and designers — connecting physical and virtual realms.
+
+Videos assigned here:
+
+Network Services (OBJ. 1.2 & 3.4)
+
+DHCP, SLAAC, DNS & Record Types, Securing DNS, NTP
+
+Quality of Service (QoS): Categorization & Mechanisms
+
+Wide Area Networks (WANs) (OBJ. 1.5)
+
+Fiber, DOCSIS, DSL, Satellite, Cellular, Microwave, Leased Lines, MPLS
+
+Understanding WAN Connections
+
+Cloud and the Datacenter (OBJ. 1.3 & 1.8)
+
+Cloud Computing, Service & Deployment Models
+
+Using Cloud Computing, Cloud Connectivity & Security
+
+Network Virtualization, SDN, SD-WAN, VXLAN, SASE & SSE
+
+Orchestration and Automation (OBJ 1.8)
+
+IaC, When/Why Automate, Benefits, Playbooks, Upgrades & Compliance
+
+Automating Network Inventories, Integrations & APIs, Source Control
+
+
+⬛ Black Mystic Tower – The Troubleshooting Enclave (Analysis & Problem Solving)
+
+Essence: Alchemists of insight — turning failures into clarity.
+
+Videos assigned here:
+
+Troubleshooting Methodology (OBJ. 5.1)
+
+Steps 1 → 7, Understanding Troubleshooting Methodology
+
+Troubleshooting Tools (OBJ. 5.5)
+
+Hardware & Software Tools
+
+ipconfig/ifconfig/ip, ping/traceroute/tracert
+
+nslookup/dig, arp, netstat, tcpdump, nmap
+
+Network Device Commands, Discovery Protocols
+
+Troubleshooting Physical Networks (OBJ. 5.2)
+
+Network Cable Limitations, Signal Issues
+
+Copper/Fiber Issues, Ethernet & Interface Issues, PoE Issues
+
+Troubleshooting Wireless Issues (OBJ. 5.4)
+
+Coverage, Interference, Client Disassociation, Misconfigurations
+
+Captive Portal Issues, Wireless Considerations
+
+Troubleshooting Network Services (OBJ. 5.3)
+
+Duplicate Addresses, DHCP, Routing, Switching & Loops
+
+Firewall, IP Configuration, VLAN, DNS/NTP Issues
+
+Troubleshooting Performance Issues (OBJ. 5.4)
+
+Collisions/Broadcast Storms, VOIP, Packet Loss, Network Performance
+
+Other Performance Issues
+
+Documentation and Processes (OBJ. 3.1)
+
+Documentation Types, Asset Inventory, IPAM, Agreements, Lifecycle
+
+Change & Configuration Management, Patch Management
+
+Disaster Recovery (OBJ. 3.3)
+
+High Availability, Redundant Networks, Metrics, Redundant Sites
+
+Training & Exercises
+
+Network Monitoring (OBJ. 1.2 & 3.2)
+
+IDS/IPS, SNMP, Sensors, Packet Captures, Flow Data
+
+Log Aggregation, SIEM, Performance Metrics, Interface Stats
