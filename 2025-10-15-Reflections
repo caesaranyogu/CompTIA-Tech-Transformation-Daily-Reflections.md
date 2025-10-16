@@ -1,0 +1,105 @@
+Mastering IPv4 Subnetting, ARP, and Network Troubleshooting
+
+
+What I Learn
+
+This study session focused on the core mechanisms of IP networking, especially within the context of the CompTIA Network+ curriculum. I learned to:
+
+Identify IPv4 address types (unicast, multicast, broadcast, and private) and understand how they are reserved and used.
+
+Explain how subnet masks and ANDing work to determine the network ID.
+
+Understand CIDR (Classless Inter-Domain Routing) and supernetting to summarize routes and reduce routing table complexity.
+
+Differentiate between ARP cache and switch MAC address tables, including how each maps and stores information at different OSI layers.
+
+Recognize private IP ranges and documentation networks (RFC 1918 and RFC 5737).
+
+Analyze ping and traceroute results to identify network reachability and firewall ICMP blocking issues.
+
+Determine subnet masks for given host requirements (e.g., 62 usable hosts → /26 mask).
+
+Identify how NAT enables private networks to access the Internet.
+
+Recall the relationship between subnet masks, prefix lengths, and host counts for IPv4 addressing.
+
+Understand how external routers use CIDR prefixes to simplify routing.
+
+
+Challenges Faced
+
+Understanding Binary ANDing Conceptually
+
+I struggled to visualize how ANDing worked between an IP address and a subnet mask.
+
+Distinguishing Private Ranges and Class Boundaries
+
+I noticed overlap between class B and C private address ranges and wasn’t sure how to categorize them.
+
+Remembering Documentation Addresses (RFC 5737)
+
+The specific IP ranges for documentation seemed arbitrary and difficult to recall.
+
+Troubleshooting Ping Failures
+
+It was confusing to understand why a traceroute succeeded but ping failed.
+
+Subnet Mask Bit Calculations
+
+Converting between prefix notation (/26, /22, etc.) and dotted-decimal masks required consistent practice.
+
+Differentiating ARP Cache vs. MAC Address Table
+
+Both seemed to deal with MAC addresses, but I had to clarify how they operate at different OSI layers.
+
+
+How I Solved Them
+
+1️⃣ What is a simple way to understand ANDing in subnetting?
+I used analogies — treating ANDing like using a stencil or filter: the subnet mask “reveals” only the network part of the IP address by keeping the bits where both have 1s. This made the math intuitive rather than abstract.
+
+2️⃣ How do I know which class a private IP range belongs to?
+I memorized the start and end ranges and focused on the first octet to determine class:
+
+Class A: 10.x.x.x
+
+Class B: 172.16.x.x–172.31.x.x
+
+Class C: 192.168.x.x
+I learned that the ranges don’t really overlap — they just appear close numerically.
+
+3️⃣ How can I easily remember documentation-only IP ranges?
+I created mnemonics and a story:
+
+192.0.2.0/24 — "The first example network"
+
+198.51.100.0/24 — "The demo network"
+
+203.0.113.0/24 — "The quiz network"
+This storytelling helped recall them quickly during exams.
+
+4️⃣ Why can traceroute succeed while ping fails?
+I realized ping uses ICMP Echo Requests, which firewalls often block, while traceroute uses incremental TTLs that can still show the path up to the firewall. So, the issue was not routing but ICMP being filtered at the destination.
+
+5️⃣ How do I calculate a subnet mask for a given number of hosts?
+I learned to use the formula 2ⁿ - 2 = usable hosts. For 62 hosts → n = 6 → 2⁶ - 2 = 62 → /26 → 255.255.255.192.
+Once I practiced this pattern, it became natural to estimate mask sizes.
+
+6️⃣ What is the difference between an ARP cache and a MAC address table?
+I reframed it using an analogy:
+
+ARP cache = my address book, mapping IPs to MACs (used by computers/routers).
+
+MAC address table = the mail sorter’s chart, mapping MACs to ports (used by switches).
+Understanding the OSI layer difference (L3 vs. L2) made it stick.
+
+
+Next Steps
+
+Move into IPv6 addressing and configuration, focusing on link-local, unique local, and global unicast addresses.
+
+Practice IP troubleshooting techniques across both IPv4 and IPv6 (ping6, traceroute6, neighbor discovery).
+
+Set up lab simulations to trace how ARP, ICMP, and subnetting behave under different scenarios.
+
+Document key IPv6 commands and comparisons to their IPv4 equivalents.
