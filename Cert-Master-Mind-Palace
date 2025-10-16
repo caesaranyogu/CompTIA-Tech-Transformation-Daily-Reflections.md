@@ -1,0 +1,197 @@
+🟥 Red Tower – The Network Wizards
+
+Focus: Network design, addressing, routing, and core networking concepts.
+They master packets, routes, and the invisible flow of data through the digital ether.
+
+Module 1.0 – Introduction
+
+1.1 Networking Overview
+
+Networking Concepts
+
+Network Types
+
+Network Topologies (Star, Mesh, Legacy)
+
+Activity: Identify & Create Network Topologies
+
+1.2 OSI Model Concepts
+
+OSI Model Overview
+
+Data Encapsulation/Decapsulation
+
+Layers 1–7 Deep Dive
+
+1.3 SOHO Networks
+
+SOHO Routers
+
+Physical → Application Layer Functions
+
+Security Functions
+
+Binary & Hexadecimal Fundamentals
+
+Module 4.0 – Internet Protocol Basics
+
+4.1 IPv4 Fundamentals
+
+IPv4 Datagram Header
+
+Layer 2 vs Layer 3 Addressing
+
+ARP, Unicast, Broadcast, Multicast, Anycast
+
+4.2 IPv4 Addressing
+
+IPv4 Format, Network/Subnet Masks
+
+Host Range, Default Gateway, Broadcast Addresses
+
+IP Config in Windows & Linux
+
+4.3 IPv4 Subnetting
+
+Classful / Classless Addressing
+
+Public vs Private Ranges
+
+CIDR & VLSM Design
+
+Module 5.0 – Routing Technologies
+
+5.1 Routing & Path Selection
+
+Static & Default Routes
+
+Packet Forwarding, Fragmentation
+
+Router Config, Routing Tools (tracert/traceroute)
+
+5.2 Dynamic Routing
+
+RIP, EIGRP, OSPF, BGP
+
+Route Selection & Metrics
+
+Module 7.1 – Time & Transport Protocols (Network Wizards’ Precision Arts)
+
+Transport Layer Security (TLS) – Protects data in motion
+
+Network Time Protocol (NTP) – Synchronizes global clocks
+
+Precision Time Protocol (PTP) – Microsecond accuracy for industrial and financial systems
+
+Labs: Configure NTP on Linux, Troubleshoot Time Synchronization Issues
+
+
+🟦 Blue Keep – The Infrastructure Masters
+
+Focus: Physical media, cabling, switching, device installation, and resilient systems.
+They guard the physical backbone of all networks.
+
+Module 2.0 – Ethernet & Cabling
+
+Ethernet standards, UTP/STP, connectors, structured cabling, fiber optics, racks, and power management.
+
+Module 3.0 – Network Interfaces & Switching
+
+NICs, transceivers, signal strength, MAC addressing, switches, and configuration.
+
+Module 7.2 – Web, File, Print, and Database Services
+
+HTTP / HTTPS / TLS Integration
+
+FTP / SFTP – File transfer protocols
+
+SMB / NAS – File & printer sharing
+
+Databases – Network database connectivity and queries
+
+Labs: Verify Secure Web Services, Scan Web Services with Nmap
+
+Module 7.4 – Disaster Recovery and High Availability
+
+Concepts, Metrics, Sites (Hot/Warm/Cold)
+
+Fault Tolerance / Redundancy
+
+Load Balancers & Clusters
+
+First Hop Redundancy (FHRP)
+
+Labs: Configure NIC Teaming, Configure First Hop Redundancy
+
+
+🟩 Green Hall – The Security Sentinels
+
+Focus: Network and system security, threat mitigation, and secure configurations.
+They defend the digital gates and maintain the balance between access and protection.
+
+Modules 9.0–11.0 – Security & Hardening
+
+Covers encryption, vulnerability types, authentication, PKI, LDAP, ACLs, IDS/IPS, IoT Security, and Physical Security.
+
+Module 7.1 (Security Integration) – Secure Communication Protocols
+
+TLS / HTTPS / SFTP – Encrypting the modern web and file exchange
+
+Applied Labs: Troubleshoot time-sync (critical for certs & security logs)
+
+Module 7.2 (Security Layer) – Secure Web and File Services
+
+Verify Secure Web Services – Validate HTTPS/TLS configs
+
+Scan for Web Services with Nmap – Identify open or vulnerable ports
+
+
+🟨 Yellow Spire – The Cloud & Remote Scholars
+
+Focus: Cloud, virtualization, VPNs, WANs, and modern distributed communication.
+They bridge distances and connect worlds.
+
+Module 13.0 – WAN & Internet Connectivity
+
+WANs and OSI Integration
+
+Module 7.3 – Email and Voice Services
+
+SMTP / IMAP – Core email protocols
+
+VoIP Protocols – SIP, RTP, SCCP
+
+VoIP Phones and Services – Power, provisioning, and signaling
+
+Labs: Connect VoIP 1 & 2
+
+
+⬛ Black Mystic Tower – The Troubleshooting Enclave
+
+Focus: Labs, simulations, and applied problem-solving.
+The realm where theory is tested and mastery is earned.
+
+Applied Labs Across All Towers
+
+Configure NTP on Linux
+
+Troubleshoot Time Sync Issues
+
+Verify Secure Web Services
+
+Scan for Web Services (Nmap)
+
+Connect VoIP Systems (1 & 2)
+
+Configure NIC Teaming
+
+Configure First Hop Redundancy
+
+
+🧭 Mind Palace Summary Map
+Tower	Domain Focus	Modules Contained
+🟥 Red Tower	Network Fundamentals & Protocols	1, 4, 5, 7.1
+🟦 Blue Keep	Infrastructure & Reliability	2, 3, 7.2, 7.4
+🟩 Green Hall	Security & Hardening	9, 10, 11, 7.1–7.2 (secure overlap)
+🟨 Yellow Spire	Cloud & Remote Connectivity	13, 7.3
+⬛ Black Mystic Tower	Troubleshooting & Labs	All applied simulations
