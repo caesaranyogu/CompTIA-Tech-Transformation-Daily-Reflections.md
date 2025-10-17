@@ -1,0 +1,71 @@
+Understanding Link-Local Addresses and IPv6 Fundamentals
+
+What I Learned
+
+This week, I dove into IPv6 addressing fundamentals — focusing on link-local addresses, EUI-64 formatting, zone indices, and unicast scopes. I learned that:
+
+IPv6 link-local addresses always start with fe80::/10, signaling that packets should stay on the local network segment and not be routed.
+
+These addresses are automatically assigned to every IPv6 interface (unlike IPv4, where APIPA only appears when DHCP fails).
+
+The IPv4 equivalent is APIPA (169.254.0.0/16), but IPv6 takes it further by requiring link-local addresses for normal operation.
+
+The zone index (like %eth0 or %1) helps distinguish identical link-local addresses across multiple interfaces (Ethernet, VPN, loopback).
+
+Flipping the 7th bit in a MAC address during EUI-64 formation differentiates the new IPv6 interface ID from the original MAC, preventing confusion between hardware and network-level identifiers.
+
+Global unicast addresses are publicly routable (/48 prefix commonly assigned to ISPs) and occupy 1/8 of the IPv6 space.
+
+I also practiced navigating Windows network adapters to locate and configure “Ethernet 2” using both GUI and CLI tools (netsh, ipconfig, ncpa.cpl).
+
+
+Challenges Faced
+
+Understanding Link vs. Node Scope
+I initially found it confusing to differentiate same-node communication from link-local communication in IPv6.
+(Same-node = internal loopback; Link-local = between devices on the same LAN segment.)
+
+Grasping What fe80 Really Means
+I wondered if fe80 was like a “command” that tells routers to stay local — understanding this as a universal IPv6 standard prefix clarified how routers automatically identify local traffic.
+
+Comparing IPv6 to IPv4 APIPA
+I needed to ground my understanding with an IPv4 analogy. Once I connected fe80:: with 169.254.x.x, it clicked that IPv6 uses link-local for basic communication even when global addressing exists.
+
+Visualizing the EUI-64 Bit Flip
+The concept of “flipping the 7th bit” felt abstract until I realized it’s like adding a small tag to say, “this address was derived from hardware but modified for IPv6.”
+
+Locating Ethernet Interfaces on Windows
+I wanted to know how to find “Ethernet 2” quickly — especially for checking IP configuration during labs.
+
+
+How I Solved Them
+
+I reframed each challenge into targeted troubleshooting prompts and worked through them systematically:
+
+Q: What does fe80:: actually tell the router?
+A: It designates a link-local scope, telling routers not to forward traffic beyond the local segment.
+
+Q: Is there an IPv4 equivalent to fe80::?
+A: Yes — APIPA (169.254.0.0/16), which serves the same local-only purpose.
+
+Q: What’s the difference between same-node and local-link?
+A: Same-node means internal (loopback). Local-link means physical LAN between nearby devices.
+
+Q: What’s the purpose of flipping the 7th bit in a MAC when forming EUI-64?
+A: It differentiates the modified IPv6 interface ID from the physical MAC address.
+
+Q: How do I access or configure “Ethernet 2” on Windows?
+A: Run ncpa.cpl to open Network Connections, or use netsh interface show interface to identify and manage adapters via command line.
+
+
+Next Steps: IP Troubleshooting
+
+Practice IPv6 troubleshooting using ping -6, tracert -6, and Wireshark filters for link-local traffic.
+
+Configure multiple interfaces on one machine to observe zone indices in action.
+
+Compare IPv4 and IPv6 auto-configuration by disconnecting DHCP and observing behavior.
+
+Document EUI-64 creation manually and verify with ipconfig /all or ip -6 addr show.
+
+Begin exploring Neighbor Discovery Protocol (NDP) and ICMPv6 as next layers of IPv6 troubleshooting.
