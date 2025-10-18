@@ -1,0 +1,76 @@
+IP Addresses
+
+
+What I Learned
+
+How non-default subnet masks (like /28) affect valid host ranges and subnet boundaries.
+
+How incorrect subnet masks can cause hosts to misroute traffic or unnecessarily involve the default gateway.
+
+The difference between ARP (maps IP to MAC) and MAC address tables (map MACs to switch ports).
+
+The meaning of a 169.254.x.x (APIPA) address and how it indicates DHCP failure.
+
+How a host on a remote network resolves addresses by finding the MAC of the default gateway through ARP.
+
+How hubs and bridges handle broadcast traffic by flooding it to all ports except the source.
+
+How a subnet mask that’s too broad makes a host believe remote IPs are local, leading to selective communication issues.
+
+How IPv6 link-local addresses are automatically assigned, enabling devices to communicate locally without manual configuration.
+
+The structure and purpose of IPv6 global unicast addresses (starting with 001).
+
+How to design efficient subnetting using VLSM to minimize IP address waste (e.g., /26, /27, /28 based on host requirements).
+
+
+Challenges Faced
+
+Understanding how subnet masks change network boundaries when prefixes aren’t /8, /16, or /24.
+
+Diagnosing why incorrect subnet masks cause routing detours or communication failures.
+
+Clarifying which protocol or table handles MAC-to-IP vs. MAC-to-port mapping.
+
+Recognizing APIPA addresses and their relation to DHCP failures.
+
+Distinguishing between IPv6 link-local and global unicast scopes.
+
+Learning how legacy network devices handle broadcast flooding.
+
+Troubleshooting selective connectivity caused by broad subnet masks.
+
+Applying VLSM properly to real-world subnetting needs.
+
+
+How I Solved Them 
+
+Q1: How can I identify which hosts belong to the same subnet when using non-default masks like /28?
+A1: Convert IPs to binary and compare the network bits. This reveals the true subnet boundary.
+
+Q2: What happens when a host’s subnet mask is incorrect?
+A2: A too-long mask sends replies through the router unnecessarily; a too-short mask makes the host think remote devices are local.
+
+Q3: Which protocol maps IPs to MACs, and which matches MACs to switch ports?
+A3: ARP maps IP → MAC, while switches maintain MAC address tables to map MAC → port.
+
+Q4: Why would a Windows host have a 169.254.x.x address?
+A4: The DHCP server didn’t respond, so Windows assigned itself an APIPA address to communicate only within the local link.
+
+Q5: How does a host find the MAC address of a remote destination?
+A5: It finds the MAC of the default gateway using the ARP cache, since the gateway handles inter-network routing.
+
+Q6: How do hubs and bridges handle broadcast traffic?
+A6: They flood broadcasts out of all ports except the one the frame came in on.
+
+Q7: What happens if a host’s subnet mask is too broad?
+A7: The host believes more addresses are local, skips the gateway, and fails to reach remote devices correctly.
+
+Q8: What feature lets IPv6 devices communicate locally without setup?
+A8: Automatic link-local address assignment (starting with fe80::).
+
+Q9: How do you minimize IP waste using VLSM?
+A9: Assign subnet sizes based on host needs — /26 for 60 hosts, /27 for 30 hosts, /28 for 14 hosts — starting from the largest subnet.
+
+
+Next Steps: Configuring Routing and Advanced Switching Modules
