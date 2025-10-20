@@ -1,0 +1,102 @@
+What I Learned
+
+UDP = User Datagram Protocol, faster but unreliable, used for real-time applications.
+
+ICMP = Internet Control Message Protocol, used for network status messages and diagnostics (e.g., ping).
+
+Traceroute outputs number of hops, IP address of ingress interface, and round-trip time; this helps map the network path.
+
+Traceroute timeout adjustments can indicate bandwidth issues.
+
+Commands to view routing tables: ip route show (Linux), route print (Windows).
+
+IPv6 handles fragmentation differently from IPv4: hosts must perform Path MTU Discovery.
+
+Routing algorithms are categorized as Distance Vector or Link State, with some hybrid protocols.
+
+RIB (Routing Information Base) stores learned routes from neighbors, static entries, and connected networks, not all possible paths.
+
+Networks under a single administrative control are Autonomous Systems (AS); protocols are classified as IGPs (Interior Gateway Protocols) or EGPs (Exterior Gateway Protocols).
+
+EIGRP operates directly over IP (protocol 88), uses hello messages, and multicasts updates.
+
+TCP and UDP exist at the transport layer; EIGRP does not use them.
+
+Distance Vector protocols rely on neighbors for network info; Link State protocols (like OSPF) build full network topology.
+
+OSPF is hierarchical, supports areas, backbone (Area 0), ABRs, and ASBRs; uses LSAs, SPF algorithm, multicast, and protocol 89.
+
+RIP selects routes based on the lowest hop count.
+
+Link State vs Distance Vector: Link State stores full topology; Distance Vector relies on neighbor info.
+
+BGP uses TCP (port 179).
+
+When multiple routes exist within the same protocol, the route with the lowest metric is chosen.
+
+
+Challenges Faced
+
+Understanding what UDP and ICMP actually do and when they’re used.
+
+Interpreting traceroute outputs (hops, ingress IP, time) and what changes in timeout indicate.
+
+Identifying which command outputs the routing table across OSes.
+
+Understanding IPv6 fragmentation differences from IPv4.
+
+Grasping RIB functionality and whether routers store every possible path.
+
+Distinguishing IGP vs EGP and AS concepts.
+
+Comprehending EIGRP operation and why it doesn’t use TCP/UDP.
+
+Differentiating Distance Vector vs Link State algorithms and their advantages/disadvantages.
+
+Understanding OSPF hierarchical structure, areas, backbone, ABRs, ASBRs, LSAs, SPF algorithm.
+
+Knowing how RIP selects routes.
+
+Remembering BGP relies on TCP.
+
+Determining how routers select routes when multiple options exist in the same protocol.
+
+
+How I Solved Them
+
+Asked: “What does UDP stand for?” → Learned definition, analogy, and use cases.
+
+Asked: “What does ICMP mean?” → Learned it’s for network diagnostics, using analogy to ping.
+
+Asked: “Explain traceroute output (hops, IP, time) in simple English.” → Broke down each field and used road trip analogy.
+
+Asked: “Why does increasing traceroute timeout indicate a bandwidth issue?” → Learned the concept of slow links delaying packet responses.
+
+Asked: “Which command outputs the active routing table?” → Identified ip route show as Linux-specific, clarified other OS differences.
+
+Asked: “How does IPv6 handle fragmentation differently from IPv4?” → Learned that hosts handle it via Path MTU Discovery.
+
+Asked: “Where does the RIB come from?” → Learned RIB comes from neighbors, static routes, and connected networks; does not store all paths.
+
+Asked: “Explain IGP vs EGP and Autonomous System.” → Clarified the roles of OSPF, BGP, and AS numbers.
+
+Asked: “Explain EIGRP operation, protocol number, hello messages, and multicasts.” → Learned it’s encapsulated in IP (protocol 88) and doesn’t use TCP/UDP.
+
+Asked: “TCP and UDP: are they transport layer?” → Confirmed yes and explained with analogy.
+
+Asked: “Explain distance vector vs link state, OSPF hierarchy, SPF, LSAs, and areas.” → Broke down network maps and routing database functions.
+
+Asked: “In RIP, how is a route selected if it already exists?” → Learned the lowest metric is chosen.
+
+Asked: “Principal difference between link state and distance vector protocols?” → Learned link state stores full topology; distance vector relies on neighbors.
+
+Asked: “What protocol does BGP use?” → Learned it uses TCP (port 179).
+
+Asked: “If two routes exist in the same protocol with same prefix length, how is one chosen?” → Learned the route with the lowest metric is used.
+
+
+Next Steps
+
+Study Network Address Translation (NAT): concepts, types, and how it interacts with routing protocols.
+
+Study Firewalls: packet filtering, stateful vs stateless, and how firewall rules affect routing and security.
