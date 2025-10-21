@@ -1,0 +1,99 @@
+Network+ Study Log – DHCP, ARP, Multicast, and Anycast
+
+🧠 What I Learned
+
+VLSM (Variable Length Subnet Masking) allows efficient IP usage by subnetting networks into different sizes as needed.
+
+DHCP operates in four stages: Discover, Offer, Request, and Acknowledge (DORA).
+
+Setting an IP lease time too long can increase attack risk because stale IPs remain in use, giving attackers more time to spoof or hijack them.
+
+DHCP Exclusions reserve specific IPs to prevent the DHCP server from assigning them — useful for devices with static IPs like routers or printers.
+
+DHCP Broadcasts can reveal your network presence, which is risky in covert or high-security operations.
+
+You can manually release and renew DHCP leases using ipconfig /release and ipconfig /renew.
+
+Having two external DNS servers ensures redundancy and availability if one fails.
+
+An IP starting with 169.254.x.x means the device failed to get a DHCP address and assigned itself an APIPA (Automatic Private IP Address).
+
+ARP (Address Resolution Protocol) starts with the IP address and asks the network for its matching MAC address.
+
+Multicast addresses occupy the 224.0.0.0 – 239.255.255.255 range (Class D) and allow one-to-many communication.
+
+Anycast uses one IP address shared by multiple servers, and routers automatically direct traffic to the nearest instance.
+
+In Windows, you can change network adapter settings through either Control Panel or the Settings app to modify IP, DNS, or DHCP behavior.
+
+
+⚔️ Challenges Faced
+
+Understanding how DHCP actually assigns and reclaims IPs.
+
+Confusion about why IP leases that are too long can create security vulnerabilities.
+
+Distinguishing between DHCP exclusions and simply not assigning an IP.
+
+Recognizing how DHCP broadcasts could expose network activity during covert operations.
+
+Clarifying the meaning of 169.254.x.x addresses and how they relate to DHCP failures.
+
+Remembering whether ARP begins with a MAC or an IP query.
+
+Visualizing the difference between unicast, multicast, and anycast in real networks.
+
+Learning the practical steps to change adapter settings or configure static IPs in Windows.
+
+
+🧰 How I Solved Them
+1️⃣ How does DHCP assign and reclaim IPs?
+
+I broke it down into the DORA process:
+
+Discover: Client broadcasts for a DHCP server.
+
+Offer: Server replies with an available IP.
+
+Request: Client asks to use that IP.
+
+Acknowledge: Server confirms and sets the lease.
+
+2️⃣ Why can long DHCP leases be a risk?
+
+I learned that long leases leave stale IPs active for longer periods — attackers could impersonate offline devices and maintain unauthorized access undetected.
+
+3️⃣ Why exclude an IP instead of not assigning it?
+
+Exclusions explicitly protect certain IPs from being leased accidentally. This ensures manual/static devices always have reserved addresses.
+
+4️⃣ Why are DHCP broadcasts risky in sensitive environments?
+
+Broadcasts reveal that a network exists — a red flag in stealth or recon missions. Disabling DHCP or switching to static IPs reduces this footprint.
+
+5️⃣ What does a 169.254.x.x address mean?
+
+That’s APIPA — Windows assigns it automatically when no DHCP reply arrives, meaning no valid IP was leased.
+
+6️⃣ Does ARP start with IP or MAC?
+
+ARP starts with the IP address — it asks, “Who has this IP?” to learn the matching MAC.
+
+7️⃣ What’s the difference between multicast and anycast?
+
+Multicast: One sender → multiple receivers (group subscription).
+
+Anycast: One IP shared → nearest server responds (location-based routing).
+
+8️⃣ How do I change adapter settings on Windows?
+
+Through Control Panel → Network and Sharing Center → Change adapter settings, or through Settings → Network & Internet → Ethernet/Wi-Fi → Edit IP settings.
+
+
+🚀 Next Steps
+
+Firewalls: Understand packet filtering, NAT, and stateful inspection.
+
+Enterprise Network Topologies: Learn hierarchical, spine-leaf, and hybrid designs.
+
+Virtual LANs (VLANs): Study segmentation, tagging (802.1Q), and inter-VLAN routing.
