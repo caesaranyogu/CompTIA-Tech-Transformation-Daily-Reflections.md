@@ -1,0 +1,93 @@
+🧠 What Did I Learn
+
+In this session, I deepened my understanding of core networking and troubleshooting concepts from the CompTIA Network+ curriculum. I learned:
+
+The purpose of the Firewall Diagnostics: States page and how it tracks live connection sessions.
+
+The difference between firmware and software, and how firmware acts as the “brainstem” of hardware.
+
+That firmware can be upgraded—like performing careful brain surgery on a device’s memory.
+
+The role of ICMP in network communication and diagnostics (e.g., ping and traceroute).
+
+The pros and cons of direct vs indirect routing.
+
+The difference between router metrics like bandwidth, traffic, and reliability.
+
+The conceptual and operational differences between distance-vector and link-state routing protocols.
+
+How OSPF functions as a link-state protocol that builds a complete map of the network for efficient path selection.
+
+The full CompTIA troubleshooting methodology, emphasizing identifying causes, forming theories, testing, implementing, verifying, and documenting.
+
+What cache poisoning is and how it tricks DNS caches to redirect users to fake or malicious sites.
+
+⚙️ Challenges Faced
+
+Understanding the Firewall Diagnostics page in plain terms — the table layout and what each column represents felt abstract at first.
+
+Differentiating firmware vs software, especially in terms of function and upgradability.
+
+Visualizing ICMP and how it differs from other protocols (since it doesn’t carry user data).
+
+Getting clear on routing terms like direct/indirect and how router metrics (bandwidth, traffic, reliability) affect path decisions.
+
+Remembering how distance vector and link state protocols actually choose routes differently.
+
+Making sense of OSPF’s map-building without technical jargon.
+
+Memorizing and internalizing the order and logic of the CompTIA troubleshooting methodology.
+
+Understanding cache poisoning not just as a definition, but as a real-world attack scenario.
+
+🧩 How I Solved Them
+
+Here are the cleaned-up prompt-style questions that guided my problem-solving process:
+
+How does the OPNsense “Firewall Diagnostics: States” page actually work in simple terms?
+→ I reimagined it like a “traffic control tower,” where each row represents a flight (connection) being tracked in real time, showing its direction, protocol, and applied rule.
+
+What’s the difference between firmware and software in everyday terms?
+→ I compared firmware to a device’s brainstem (deep control, rarely changed) and software to the apps and thoughts that run on top of it.
+
+Can firmware be changed or upgraded, and how risky is it?
+→ I visualized it as brain surgery—possible, but delicate, requiring exact tools (manufacturer updates).
+
+What is ICMP and why is it useful?
+→ I saw it as the postal service’s “return to sender” system, sending short diagnostic notes between devices instead of full letters (data).
+
+What are the pros and cons of direct vs indirect routing?
+→ I used a travel analogy: direct routing is like taking a direct flight (faster, simpler), while indirect is like connecting flights (more flexible, handles complex networks).
+
+What’s the difference between router metrics like bandwidth, traffic, and reliability?
+→ I thought of it as choosing a road:
+
+Bandwidth = road width,
+
+Traffic = how crowded it is,
+
+Reliability = how often it’s closed or broken.
+
+What’s the difference between distance vector and link state routing?
+→ I imagined two kinds of travelers:
+
+Distance vector = follows directions from friends (hop counts).
+
+Link state = studies the entire map and picks the best path independently.
+
+How does OSPF work in simple language?
+→ It’s like a GPS system—routers share their maps, build a full view of the network, and always choose the shortest route based on current conditions.
+
+What’s the right order of steps in the CompTIA troubleshooting methodology, and why does it matter?
+→ I learned it’s like detective work—you first collect clues, test theories, plan, fix, verify, and finally document so you can solve future cases faster.
+
+What is cache poisoning and why is it dangerous?
+→ I used a librarian analogy—someone tricks the librarian into remembering the wrong shelf for a book (DNS address), sending users to fake or malicious sites.
+
+🔮 Next Steps
+
+Study Topics:
+
+Subnetting – Learn to calculate subnets, CIDR notation, and IP addressing efficiently.
+
+VoIP (Voice over IP) – Understand how voice data travels over networks, QoS (Quality of Service), and SIP/RTP protocols.
