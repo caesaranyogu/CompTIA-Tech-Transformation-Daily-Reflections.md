@@ -1,0 +1,55 @@
+What Did I Learn
+
+IEEE: The Institute of Electrical and Electronics Engineers (IEEE) develops global networking standards like 802.1Q (for VLAN tagging).
+
+VLAN Fundamentals: VLANs logically segment network traffic to improve efficiency and security without changing physical topology.
+
+Access (Untagged) vs Trunk (Tagged) Ports:
+
+Access/Untagged ports handle traffic for a single VLAN and send/receive frames without tags.
+
+Trunk/Tagged ports can carry traffic from multiple VLANs and attach 802.1Q tags to frames to identify VLAN membership.
+
+Voice VLAN (Auxiliary VLAN): Enables separation of voice and data traffic over the same physical connection, simplifying VoIP deployment.
+
+Default and Native VLANs:
+
+Default VLAN (VLAN 1) is assigned to all ports by default but should not carry user data.
+
+Native VLAN is used for untagged traffic on trunk links and should be distinct from the default VLAN for security.
+
+VoIP Configuration:
+
+PCs connect to the phone, and the phone connects to the wall port.
+
+The switch differentiates PC (untagged) and voice (tagged) traffic using access and voice VLAN commands.
+
+Challenges Faced
+
+Understanding how tagged and untagged ports differ in behavior and usage.
+
+Clarifying how VoIP phones and PCs share the same physical connection without causing network conflicts.
+
+Distinguishing between default VLAN and native VLAN and their security implications.
+
+Remembering the correct configuration order when setting up a voice VLAN.
+
+How I Solved Them (Cleaned Prompt Questions + Explanations)
+1. ❓ What is the IEEE and why is it important for networking?
+
+I learned that the IEEE sets and maintains the technical standards for how networking technologies interoperate, such as Ethernet (802.3) and VLAN tagging (802.1Q).
+
+2. ❓ How do tagged and untagged ports handle VLAN traffic differently?
+
+Tagged ports add VLAN tags to identify traffic from multiple VLANs (used on trunks), while untagged ports send traffic without tags and belong to a single VLAN (used for end devices).
+
+Analogy: Tagged ports are like couriers labeling packages for different destinations; untagged ports handle only one destination.
+
+3. ❓ How do VoIP phones and PCs share one wall port safely?
+
+A VoIP handset has a built-in mini-switch with two ports — one connects to the wall (uplink), and one connects to the PC.
+
+The PC traffic is untagged and assigned to the data VLAN.
+
+The voice traffic is tagged and assigned to the voice VLAN.
+This is configured on the switch using:
