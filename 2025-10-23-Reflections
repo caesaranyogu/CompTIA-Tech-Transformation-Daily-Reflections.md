@@ -1,0 +1,74 @@
+What I Learned
+
+IP vs. MAC Address — Where They’re Stored and How They Work
+MAC Address: A permanent, hardware-level address burned into the NIC firmware. Retrieved by the OS from the NIC during boot or adapter initialization. Viewable via commands like ipconfig /all (Windows) or ifconfig / ip link show (Linux/macOS). Stays the same unless manually spoofed.
+IP Address: A logical address assigned by the operating system or DHCP server. Stored in RAM for dynamic (DHCP) assignments and in config files or registry entries for static IPs. Can change between networks or reboots.
+Analogy: The MAC address is like your house’s engraved serial number — permanent and tied to the building. The IP address is your mailing address — changes depending on where you live or who assigns it.
+
+How the OS Associates IP and MAC for Traffic
+The OS stores the IP in memory and configuration files. The NIC uses its MAC address for Layer 2 communication. ARP (Address Resolution Protocol) connects the two by mapping IPs to MACs in the ARP cache. The OS tells the NIC which IP to respond to, effectively pairing that IP with its MAC for sending and receiving packets.
+
+Common and Default Ports
+Ports are like doors where different services listen for connections. Even though you can technically use any port, common ports exist so everyone knows where standard services run.
+HTTP – Port 80 (TCP)
+HTTPS – Port 443 (TCP)
+SSH – Port 22 (TCP)
+DNS – Port 53 (UDP/TCP)
+FTP – Port 21 (TCP)
+Analogy: Each service is like a department in a company office — each department has its own door number so visitors know where to go.
+
+Oracle Database Default Ports
+Oracle Net Listener – 1521 (TCP) – Main port for client connections
+Oracle Enterprise Manager (DB Console) – 5500 (12c+) / 1158 (11g) (TCP) – Web-based management
+Oracle HTTP Server / XML DB – 8080 (TCP) – For REST/XML access
+Oracle Net Listener (SSL) – 2483 / 2484 (TCP) – Secure or alternate connections
+Oracle Data Guard Broker – 5000–5500 (TCP) – For Data Guard management
+Oracle Streams AQ – 1575–1576 (TCP) – For advanced message queuing
+Analogy: Each service is like a specific office in a large building — each has a door number (port) so clients can reach it.
+
+Routing Troubleshooting
+If you can ping your gateway but not other networks, it usually means a routing problem.
+Steps:
+
+Check router power, cabling, and IP configuration.
+
+Use traceroute to see where the connection fails.
+
+Check routing tables (show ip route) to confirm the router knows the path.
+
+Fix missing or incorrect routes by reconfiguring static or dynamic routes.
+
+Understand route selection priorities: the most specific route wins, then the lowest administrative distance, then the lowest metric.
+
+Avoid overlapping routes, which can cause confusion.
+Analogy: Routers are like traffic controllers at intersections. They need accurate maps (routing tables) and clear priorities to direct traffic efficiently.
+
+Challenges Faced
+
+Confusion about where IP and MAC are stored — hardware vs. software layers.
+
+Misunderstanding what “common ports” really mean.
+
+Difficulty visualizing routing priorities and how routers make path decisions.
+
+Differentiating between physical (MAC) and logical (IP) addressing layers.
+
+How I Solved Them
+
+Q1: Where exactly are IP and MAC addresses stored?
+A: The MAC lives in the NIC firmware; the IP lives in OS memory or config files.
+
+Q2: Why are there “common ports” if any can be used?
+A: Standards ensure consistent communication, like a shared language between clients and servers.
+
+Q3: How does the OS tie IP and MAC together?
+A: Through the ARP table, which maps IPs to MACs so packets reach the right device.
+
+Q4: Why can I ping my gateway but not other networks?
+A: Likely due to a missing or misconfigured route or router beyond the gateway.
+
+Q5: How does the router choose which route to take?
+A: Based on specificity first, then administrative distance, then metric distance.
+
+Next Steps:
+Firewalls and TCP/UDP Transport Layer
