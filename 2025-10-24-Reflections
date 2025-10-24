@@ -1,0 +1,113 @@
+What I learn
+
+Transport layer concepts: initial window, TCP segment order, out-of-order packet handling, and congestion control.
+
+Differences between stateless vs stateful firewalls, forward vs reverse proxies, and specialized firewalls (email, web, database).
+
+Layer-specific devices: TAPs, port mirroring, and where they operate in the OSI model.
+
+Forwarding and routing logic, and how switching works in networks.
+
+Proxy inspection techniques, including hash-based blocking and deep packet inspection.
+
+Real-world network examples: MAN vs CAN, and how a campus vs city network differ.
+
+How DNA can be conceptualized as digital information (1s and 0s).
+
+Firewall market share for major vendors: Palo Alto, Cisco, Fortinet, and Juniper.
+
+
+Challenges faced
+
+Understanding how transport layer protocols determine the initial TCP window without prior acknowledgements.
+
+Conceptualizing how videos receive out-of-order packets yet play seamlessly.
+
+Mapping firewall filtering across all OSI layers and understanding AI-driven or passive firewalls.
+
+Distinguishing forward vs reverse proxies and their application-layer functions.
+
+Remembering forward proxy vs reverse proxy for exam and real-world scenarios.
+
+Distinguishing TAPs vs port mirroring, and mapping them to Layer 1 or Layer 2.
+
+Understanding how proxies use hash tables for blocking and when that applies.
+
+Remembering specialized firewalls: email, web (WAF), database, and their functions.
+
+Understanding MAN vs CAN networks in real-world contexts like Athens, Georgia.
+
+Converting biological sequences (DNA) into a digital/binary analogy.
+
+
+How I solved them (Prompt-style questions)
+
+Transport Layer Initial Window:
+How does the TCP transport layer pick its initial window without receiving acknowledgements?
+
+Resolved by explaining TCP’s slow start algorithm and use of default window sizes based on OS and connection type.
+
+Out-of-order Video Packets:
+Why do videos receive packets out of order but play smoothly?
+
+Explained buffering, reordering, and TCP/UDP handling at transport layer.
+
+Firewall Filtering at OSI Layers:
+What does firewall filtering look like at each OSI layer?
+
+Learned filtering examples for Layer 2 through Layer 7; included network, stateful, and application-layer inspection.
+
+AI and Passive Firewalls:
+Are there AI-driven firewalls and can firewalls operate in detect-only mode?
+
+Clarified NGFWs can be passive or active; AI adds anomaly detection.
+
+Proxy Functions as Application Firewalls:
+Why can a proxy act as an application firewall?
+
+Resolved: application proxies inspect Layer 7 traffic and enforce security policies, acting as WAFs.
+
+Forward vs Reverse Proxy:
+How do I remember forward vs reverse proxies?
+
+Used mnemonics: “Forward → client protection; Reverse → server protection” with secret agent vs bodyguard analogy.
+
+TAP vs Port Mirroring:
+Is port mirroring the same as a TAP?
+
+Resolved: TAP = Layer 1, passive; port mirroring = Layer 2, active copying of frames.
+
+Proxies and Hash-based Blocking:
+Do proxies turn block tables into hashes and block when they match?
+
+Resolved: hashes are used for known files; combined with DPI, ML, and signature checks.
+
+Specialized Firewalls:
+What is an email firewall, WAF, and database firewall?
+
+Explained their Layer 7 focus, use cases, and common vendors.
+
+MAN vs CAN Networks:
+How do MAN and CAN networks differ?
+
+Resolved with real-world examples (UGA campus = CAN; Athens city fiber = MAN).
+
+DNA as Digital Data:
+How is DNA represented as 1s and 0s?
+
+Explained base-4 to binary conversion, codons, and analogy to computer information systems.
+
+Firewall Market Share:
+Who has the biggest firewall market share: Juniper, Cisco, Fortinet, or Palo Alto?
+
+Reviewed reports showing Palo Alto leading, followed by Cisco and Fortinet; Juniper smaller.
+
+Stateless vs Stateful Firewalls:
+Why are they called stateless and stateful?
+
+Explained “state” = tracking connection info; stateless = per-packet decisions, stateful = keeps session context.
+
+
+Next Steps
+
+Focus area: Transportation and Application Layer Protocols
